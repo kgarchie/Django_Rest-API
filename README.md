@@ -30,17 +30,7 @@ To install on Windows machines with python already installed correctly
 * create a virtual environment ```python -m venv myvenv```(this creates a virtual environment for python)
 * activate the environment using ```myvenv/Scripts/activate``` (Note the S is capital). You may receive an error because running scripts is disabled. At this point restart powershell this time as administrator and type in this command 'set-executionpolicy remotesigned'. It will allow local scripts to run.
 
-run
-```pip install django```
-```pip install django-allauth```
-```pip install djangorestframework```
+to be continued...
 
-then
-```python manage.py startapp API2```
-Download the files
-Copy the files in API and replace them in the new API2
-Do the same for the HTML templates.
 
-```python manage.py makemigrations```
-```python manage.py migrate```
-```python manage.pt runserver```
+

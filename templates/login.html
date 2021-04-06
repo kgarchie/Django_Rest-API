@@ -1,0 +1,21 @@
+{% load crispy_forms_tags %}
+
+<!--Login-->
+<div class="container py-5">
+    <h1>Login</h1>
+    {% load socialaccount %}
+    {% load static %}
+    {% providers_media_js %}
+    <div class="signin text-center">
+        <a href="{% provider_login_url 'google' %}" class="text-dark"><img
+                src='{% static "btn_google_signin_light_normal_web@2x.png" %}' style="width:14rem; height:auto"
+                alt="img"></a>
+    </div>
+    <form method="POST">
+        {% csrf_token %}
+        {{ login_form|crispy }}
+        <button class="btn btn-primary" type="submit">Login</button>
+    </form>
+    <p class="text-center">Forgot Password <a href="{% url 'API:password_reset' %}">Reset Password</a>.</p>
+    <p class="text-center">Don't have an account? <a href="{% url 'API:register' %}">Create an account</a>.</p>
+</div>

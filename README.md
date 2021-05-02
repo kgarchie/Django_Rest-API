@@ -1,5 +1,5 @@
 # ELU
-## A Django App with REST API
+## A Django App with REST API and Google authentication using all-auth module
 
 This app includes Google OAuth to ease signup and signin. This will coerce users to create accounts. Emails from these accounts can be used to push notifications and events about the organisation.
 I made an REST API to enable bootstrapping of the project to other Applications on Andoid and IOS.
